@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Valitation</title>
+    <link rel="stylesheet" href="form.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+        <script src="./form.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row" >
+            <h1 class="h">Sign Up</h1>
+            <form>
+                <div>
+                <label class="label" for="username">User name:</label><br>
+                <input class="input" type="text" id="username" placeholder="username"><br>
+                <span id="user" style="color: red;"></span></div>
+
+               <div><label class="label" for="email">Email:</label><br>
+                <input class="input" type="email" id="email" placeholder="enter your email" ><br>
+                <span id="mail" style="color: red;"></span></div> 
+
+                <div><label class="label" for="password">Password:</label><br>
+                <input class="input" type="password" id="password" placeholder="enter your password"><br>
+                <span id="pass" style="color: red;"></span></div>
+
+                <div> <label class="label" for="">Confirm Password:</label><br>
+                <input class="input" type="password" id="cpassword"><br>
+                <span id="pass1" style="color: red;"></span></div>
+
+               <div> <label class="label">Mobile number:</label><br>
+                <input class="input" type="number" id="mobile"><br><br>
+                <span id="mnumber" style="color: red;"></span></div>
+
+               <div><label class="label" for="gender">Gender:</label>
+                <input type="radio" name="gender" id="mgender" value="Male">Male
+                
+                <input type="radio" name="gender" id="fgender" value="Female">Female
+                <span id="radioerr" style="color: red;"></span>
+                 <br><br></div>
+
+               <div><label for="address" class="label">Address:</label><br>
+                <textarea name="" id="address" cols="50" rows="3" ></textarea><br>
+               <span id="add" style="color: red;"></span></div><br>
+
+               <div> <label class="label">Select country</label>
+                <select id="sel">
+                    <option value="select">select</option>
+                    <option value="India">India</option>
+                    <option value="London">London</option>
+                    <option value="America">America</option>
+                    <option value="Dubai">Dubai</option>
+                </select>
+                <span id="dropdown err" style="color: red;"></span>
+
+                <label class="label">Select state</label>
+                <select id="drop">
+                    <option value="select">select</option>
+                    <option value="Tamil nadu">Tamil nadu</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Delhi">Delhi</option>
+                </select><span id="dropdown" style="color: red;"></span>
+                <br><br></div>
+
+                <div><input type="checkbox" id="check"><span id="box" style="color: red;"></span>
+                <label>I, hereby, declare that the particulars given above are correct.</label><br><br></div>
+
+               <div> <input type="button" class="submit" value="submit" onclick="validform()"></div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
